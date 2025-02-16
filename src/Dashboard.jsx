@@ -9,7 +9,7 @@ const Dashboard = ({hide}) => {
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
       
-         {/* <button className="btn btn-primary" onCli ck={()=>navigate("/login")}>Login</button> */}
+         <button className="btn btn-primary" onClick={()=>navigate("/login")}>Login</button>
         
         
        

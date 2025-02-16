@@ -5,7 +5,7 @@ const Signup = () => {
    
   return (
     <div>
-        <SignUp signInUrl="/Login" forceRedirectUrl={"/dashboard"}/>
+        <SignUp signInUrl="/" forceRedirectUrl={"/dashboard"}/>
     </div>
   )
 }

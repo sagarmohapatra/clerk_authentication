@@ -2,7 +2,9 @@ import React from 'react'
 // import { SignInButton, SignOutButton, useUser } from "@clerk/clerk-react";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Dashboard from './Dashboard'
-import { SignIn, SignUp } from '@clerk/clerk-react'
+// import { SignIn, SignUp } from '@clerk/clerk-react'
+import Signup from './Signup'
+import Login from './Login'
 const App = () => {
  
   return (
@@ -11,14 +13,14 @@ const App = () => {
       <Router>
         <Routes>
         
-        <Route path="/Login" element={<SignIn/>}/>
+        <Route  path="/" element={<Login/>}/>
      
        
-         <Route path="/signup" element={<SignUp/>}/>
+         <Route path="/signup" element={<Signup/>}/>
     
           
-          <Route path="/register" element={""}/>
-          <Route path="/" element={<Dashboard/>}/>
+          <Route path="register" element={""}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
           
         </Routes>
       </Router>
